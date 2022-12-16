@@ -44,7 +44,7 @@ type Item struct {
     // The unitPrice property
     unitPrice *float64
 }
-// NewItem instantiates a new item and sets the default values.
+// NewItem instantiates a new Item and sets the default values.
 func NewItem()(*Item) {
     m := &Item{
         Entity: *NewEntity(),

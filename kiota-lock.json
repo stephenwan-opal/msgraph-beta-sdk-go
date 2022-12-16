@@ -1,29 +1,38 @@
 {
-  "descriptionHash": "19334296806BC1A81E536EEC005FF28C3218A29333C37BE03488015558F997B4531701AF3D2D0C63B7B09F31C67A2588FB195434A90A4EBD4E89DF57C5BF6D11",
-  "descriptionLocation": "https://raw.githubusercontent.com/microsoftgraph/msgraph-metadata/master/openapi/beta/openapi.yaml",
+  "descriptionHash": "97B8BFFF3EF492BEC34BDFB04ACB04049803DA3E1183240D2F95EDB46BA8BD51986AE0F558303106DDB7D615C5B7F47D112251374802DE5889DBCBFA10480586",
+  "descriptionLocation": "/Users/stephen/git/msgraph-beta-sdk-go/./output/result.json",
   "lockFileVersion": "1.0.0",
   "kiotaVersion": "0.8.3.0",
   "clientClassName": "GraphBaseServiceClient",
-  "clientNamespaceName": "github.com/microsoftgraph/msgraph-beta-sdk-go/",
+  "clientNamespaceName": "github.com/microsoftgraph/msgraph-beta-sdk-go",
   "language": "Go",
   "usesBackingStore": false,
   "includeAdditionalData": true,
   "serializers": [
     "Microsoft.Kiota.Serialization.Json.JsonSerializationWriterFactory",
-    "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory"
+    "Microsoft.Kiota.Serialization.Text.TextSerializationWriterFactory",
+    "Microsoft.Kiota.Serialization.Form.FormSerializationWriterFactory"
   ],
   "deserializers": [
     "Microsoft.Kiota.Serialization.Json.JsonParseNodeFactory",
-    "Microsoft.Kiota.Serialization.Text.TextParseNodeFactory"
+    "Microsoft.Kiota.Serialization.Text.TextParseNodeFactory",
+    "Microsoft.Kiota.Serialization.Form.FormParseNodeFactory"
   ],
   "structuredMimeTypes": [
     "application/json",
-    "application/xml",
     "text/plain",
-    "text/xml",
-    "text/yaml"
+    "application/x-www-form-urlencoded"
   ],
-  "includePatterns": [],
+  "includePatterns": [
+    "/groups",
+    "/groups/{group-id}",
+    "/groups/**/members",
+    "/groups/**/members/**",
+    "/groups/**/transitiveMembers",
+    "/groups/**/transitiveMembers/**",
+    "/users",
+    "/users/{user-id}"
+  ],
   "excludePatterns": [],
   "disabledValidationRules": []
 }

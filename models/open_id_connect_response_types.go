@@ -2,7 +2,7 @@ package models
 import (
     "errors"
 )
-// Provides operations to manage the collection of application entities.
+// Provides operations to manage the collection of group entities.
 type OpenIdConnectResponseTypes int
 
 const (

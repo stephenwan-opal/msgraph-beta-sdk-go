@@ -2,7 +2,7 @@ package models
 import (
     "errors"
 )
-// Provides operations to manage the collection of externalConnection entities.
+// Provides operations to manage the collection of group entities.
 type BinaryOperator int
 
 const (

@@ -2,7 +2,7 @@ package models
 import (
     "errors"
 )
-// Provides operations to manage the collection of administrativeUnit entities.
+// Provides operations to manage the collection of user entities.
 type UserNewMessageRestriction int
 
 const (

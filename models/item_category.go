@@ -15,7 +15,7 @@ type ItemCategory struct {
     // The lastModifiedDateTime property
     lastModifiedDateTime *i336074805fc853987abe6f7fe3ad97a6a6f3077a16391fec744f671a015fbd7e.Time
 }
-// NewItemCategory instantiates a new itemCategory and sets the default values.
+// NewItemCategory instantiates a new ItemCategory and sets the default values.
 func NewItemCategory()(*ItemCategory) {
     m := &ItemCategory{
         Entity: *NewEntity(),

@@ -2,7 +2,7 @@ package models
 import (
     "errors"
 )
-// Provides operations to manage the dataClassificationService singleton.
+// Provides operations to manage the collection of group entities.
 type RestrictionTrigger int
 
 const (

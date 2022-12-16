@@ -21,7 +21,7 @@ type Currency struct {
     // The symbol property
     symbol *string
 }
-// NewCurrency instantiates a new currency and sets the default values.
+// NewCurrency instantiates a new Currency and sets the default values.
 func NewCurrency()(*Currency) {
     m := &Currency{
         Entity: *NewEntity(),

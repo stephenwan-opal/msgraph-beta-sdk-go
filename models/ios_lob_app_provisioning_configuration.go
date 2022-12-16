@@ -5,7 +5,7 @@ import (
     i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91 "github.com/microsoft/kiota-abstractions-go/serialization"
 )
 
-// IosLobAppProvisioningConfiguration this topic provides descriptions of the declared methods, properties and relationships exposed by the iOS Lob App Provisioning Configuration resource.
+// IosLobAppProvisioningConfiguration 
 type IosLobAppProvisioningConfiguration struct {
     Entity
     // The associated group assignments for IosLobAppProvisioningConfiguration.
@@ -35,7 +35,7 @@ type IosLobAppProvisioningConfiguration struct {
     // Version of the device configuration.
     version *int32
 }
-// NewIosLobAppProvisioningConfiguration instantiates a new iosLobAppProvisioningConfiguration and sets the default values.
+// NewIosLobAppProvisioningConfiguration instantiates a new IosLobAppProvisioningConfiguration and sets the default values.
 func NewIosLobAppProvisioningConfiguration()(*IosLobAppProvisioningConfiguration) {
     m := &IosLobAppProvisioningConfiguration{
         Entity: *NewEntity(),
