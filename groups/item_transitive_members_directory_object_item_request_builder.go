@@ -32,10 +32,10 @@ type ItemTransitiveMembersDirectoryObjectItemRequestBuilderGetRequestConfigurati
     // Request query parameters
     QueryParameters *ItemTransitiveMembersDirectoryObjectItemRequestBuilderGetQueryParameters
 }
-// Application casts the previous resource to application.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Application()(*ItemTransitiveMembersItemApplicationRequestBuilder) {
-    return NewItemTransitiveMembersItemApplicationRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Application casts the previous resource to application.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Application()(*ItemTransitiveMembersItemApplicationRequestBuilder) {
+//     return NewItemTransitiveMembersItemApplicationRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
 // NewItemTransitiveMembersDirectoryObjectItemRequestBuilderInternal instantiates a new DirectoryObjectItemRequestBuilder and sets the default values.
 func NewItemTransitiveMembersDirectoryObjectItemRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemTransitiveMembersDirectoryObjectItemRequestBuilder) {
     m := &ItemTransitiveMembersDirectoryObjectItemRequestBuilder{
@@ -71,10 +71,10 @@ func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) CreateGetReques
     }
     return requestInfo, nil
 }
-// Device casts the previous resource to device.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Device()(*ItemTransitiveMembersItemDeviceRequestBuilder) {
-    return NewItemTransitiveMembersItemDeviceRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Device casts the previous resource to device.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Device()(*ItemTransitiveMembersItemDeviceRequestBuilder) {
+//     return NewItemTransitiveMembersItemDeviceRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
 // Get the direct and transitive members of a group. Nullable.
 func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Get(ctx context.Context, requestConfiguration *ItemTransitiveMembersDirectoryObjectItemRequestBuilderGetRequestConfiguration)(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.DirectoryObjectable, error) {
     requestInfo, err := m.CreateGetRequestInformation(ctx, requestConfiguration);
@@ -94,19 +94,19 @@ func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Get(ctx context
     }
     return res.(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.DirectoryObjectable), nil
 }
-// Group casts the previous resource to group.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Group()(*ItemTransitiveMembersItemGroupRequestBuilder) {
-    return NewItemTransitiveMembersItemGroupRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// OrgContact casts the previous resource to orgContact.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) OrgContact()(*ItemTransitiveMembersItemOrgContactRequestBuilder) {
-    return NewItemTransitiveMembersItemOrgContactRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// ServicePrincipal casts the previous resource to servicePrincipal.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) ServicePrincipal()(*ItemTransitiveMembersItemServicePrincipalRequestBuilder) {
-    return NewItemTransitiveMembersItemServicePrincipalRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// User casts the previous resource to user.
-func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) User()(*ItemTransitiveMembersItemUserRequestBuilder) {
-    return NewItemTransitiveMembersItemUserRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Group casts the previous resource to group.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) Group()(*ItemTransitiveMembersItemGroupRequestBuilder) {
+//     return NewItemTransitiveMembersItemGroupRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // OrgContact casts the previous resource to orgContact.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) OrgContact()(*ItemTransitiveMembersItemOrgContactRequestBuilder) {
+//     return NewItemTransitiveMembersItemOrgContactRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // ServicePrincipal casts the previous resource to servicePrincipal.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) ServicePrincipal()(*ItemTransitiveMembersItemServicePrincipalRequestBuilder) {
+//     return NewItemTransitiveMembersItemServicePrincipalRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // User casts the previous resource to user.
+// func (m *ItemTransitiveMembersDirectoryObjectItemRequestBuilder) User()(*ItemTransitiveMembersItemUserRequestBuilder) {
+//     return NewItemTransitiveMembersItemUserRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }

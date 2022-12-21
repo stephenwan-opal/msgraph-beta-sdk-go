@@ -44,10 +44,10 @@ type ItemTransitiveMembersRequestBuilderGetRequestConfiguration struct {
     // Request query parameters
     QueryParameters *ItemTransitiveMembersRequestBuilderGetQueryParameters
 }
-// Application casts the previous resource to application.
-func (m *ItemTransitiveMembersRequestBuilder) Application()(*ItemTransitiveMembersApplicationRequestBuilder) {
-    return NewItemTransitiveMembersApplicationRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Application casts the previous resource to application.
+// func (m *ItemTransitiveMembersRequestBuilder) Application()(*ItemTransitiveMembersApplicationRequestBuilder) {
+//     return NewItemTransitiveMembersApplicationRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
 // NewItemTransitiveMembersRequestBuilderInternal instantiates a new TransitiveMembersRequestBuilder and sets the default values.
 func NewItemTransitiveMembersRequestBuilderInternal(pathParameters map[string]string, requestAdapter i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestAdapter)(*ItemTransitiveMembersRequestBuilder) {
     m := &ItemTransitiveMembersRequestBuilder{
@@ -67,10 +67,10 @@ func NewItemTransitiveMembersRequestBuilder(rawUrl string, requestAdapter i2ae41
     urlParams["request-raw-url"] = rawUrl
     return NewItemTransitiveMembersRequestBuilderInternal(urlParams, requestAdapter)
 }
-// Count provides operations to count the resources in the collection.
-func (m *ItemTransitiveMembersRequestBuilder) Count()(*ItemTransitiveMembersCountRequestBuilder) {
-    return NewItemTransitiveMembersCountRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Count provides operations to count the resources in the collection.
+// func (m *ItemTransitiveMembersRequestBuilder) Count()(*ItemTransitiveMembersCountRequestBuilder) {
+//     return NewItemTransitiveMembersCountRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
 // CreateGetRequestInformation the direct and transitive members of a group. Nullable.
 func (m *ItemTransitiveMembersRequestBuilder) CreateGetRequestInformation(ctx context.Context, requestConfiguration *ItemTransitiveMembersRequestBuilderGetRequestConfiguration)(*i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.RequestInformation, error) {
     requestInfo := i2ae4187f7daee263371cb1c977df639813ab50ffa529013b7437480d1ec0158f.NewRequestInformation()
@@ -87,13 +87,13 @@ func (m *ItemTransitiveMembersRequestBuilder) CreateGetRequestInformation(ctx co
     }
     return requestInfo, nil
 }
-// Device casts the previous resource to device.
-func (m *ItemTransitiveMembersRequestBuilder) Device()(*ItemTransitiveMembersDeviceRequestBuilder) {
-    return NewItemTransitiveMembersDeviceRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Device casts the previous resource to device.
+// func (m *ItemTransitiveMembersRequestBuilder) Device()(*ItemTransitiveMembersDeviceRequestBuilder) {
+//     return NewItemTransitiveMembersDeviceRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
 // Get the direct and transitive members of a group. Nullable.
 // [Find more info here]
-// 
+//
 // [Find more info here]: https://docs.microsoft.com/graph/api/group-list-transitivemembers?view=graph-rest-1.0
 func (m *ItemTransitiveMembersRequestBuilder) Get(ctx context.Context, requestConfiguration *ItemTransitiveMembersRequestBuilderGetRequestConfiguration)(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.DirectoryObjectCollectionResponseable, error) {
     requestInfo, err := m.CreateGetRequestInformation(ctx, requestConfiguration);
@@ -113,19 +113,19 @@ func (m *ItemTransitiveMembersRequestBuilder) Get(ctx context.Context, requestCo
     }
     return res.(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.DirectoryObjectCollectionResponseable), nil
 }
-// Group casts the previous resource to group.
-func (m *ItemTransitiveMembersRequestBuilder) Group()(*ItemTransitiveMembersGroupRequestBuilder) {
-    return NewItemTransitiveMembersGroupRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// OrgContact casts the previous resource to orgContact.
-func (m *ItemTransitiveMembersRequestBuilder) OrgContact()(*ItemTransitiveMembersOrgContactRequestBuilder) {
-    return NewItemTransitiveMembersOrgContactRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// ServicePrincipal casts the previous resource to servicePrincipal.
-func (m *ItemTransitiveMembersRequestBuilder) ServicePrincipal()(*ItemTransitiveMembersServicePrincipalRequestBuilder) {
-    return NewItemTransitiveMembersServicePrincipalRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
-// User casts the previous resource to user.
-func (m *ItemTransitiveMembersRequestBuilder) User()(*ItemTransitiveMembersUserRequestBuilder) {
-    return NewItemTransitiveMembersUserRequestBuilderInternal(m.pathParameters, m.requestAdapter);
-}
+// // Group casts the previous resource to group.
+// func (m *ItemTransitiveMembersRequestBuilder) Group()(*ItemTransitiveMembersGroupRequestBuilder) {
+//     return NewItemTransitiveMembersGroupRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // OrgContact casts the previous resource to orgContact.
+// func (m *ItemTransitiveMembersRequestBuilder) OrgContact()(*ItemTransitiveMembersOrgContactRequestBuilder) {
+//     return NewItemTransitiveMembersOrgContactRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // ServicePrincipal casts the previous resource to servicePrincipal.
+// func (m *ItemTransitiveMembersRequestBuilder) ServicePrincipal()(*ItemTransitiveMembersServicePrincipalRequestBuilder) {
+//     return NewItemTransitiveMembersServicePrincipalRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }
+// // User casts the previous resource to user.
+// func (m *ItemTransitiveMembersRequestBuilder) User()(*ItemTransitiveMembersUserRequestBuilder) {
+//     return NewItemTransitiveMembersUserRequestBuilderInternal(m.pathParameters, m.requestAdapter);
+// }

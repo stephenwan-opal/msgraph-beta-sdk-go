@@ -102,7 +102,7 @@ func (m *UsersRequestBuilder) CreatePostRequestInformation(ctx context.Context, 
 }
 // Get retrieve a list of user objects. This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the Properties section. To get properties that are _not_ returned by default, do a GET operation for the user and specify the properties in a `$select` OData query option.
 // [Find more info here]
-// 
+//
 // [Find more info here]: https://docs.microsoft.com/graph/api/user-list?view=graph-rest-1.0
 func (m *UsersRequestBuilder) Get(ctx context.Context, requestConfiguration *UsersRequestBuilderGetRequestConfiguration)(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.UserCollectionResponseable, error) {
     requestInfo, err := m.CreateGetRequestInformation(ctx, requestConfiguration);
@@ -124,7 +124,7 @@ func (m *UsersRequestBuilder) Get(ctx context.Context, requestConfiguration *Use
 }
 // Post create a new user.The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties. This operation returns by default only a subset of the properties for each user. These default properties are noted in the Properties section. To get properties that are not returned by default, do a GET operation and specify the properties in a `$select` OData query option.
 // [Find more info here]
-// 
+//
 // [Find more info here]: https://docs.microsoft.com/graph/api/user-post-users?view=graph-rest-1.0
 func (m *UsersRequestBuilder) Post(ctx context.Context, body ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.Userable, requestConfiguration *UsersRequestBuilderPostRequestConfiguration)(ie233ee762e29b4ba6970aa2a2efce4b7fde11697ca9ea81099d0f8269309c1be.Userable, error) {
     requestInfo, err := m.CreatePostRequestInformation(ctx, body, requestConfiguration);
